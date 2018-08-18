@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">N-Simplex Volume By Monte Carlo Method</string>
+
+    <string name="dimension_question">What n value for the dimension of the simplex would you like to find the approximate value for?</string>
+    <string name="n_selection_question">n Value: </string>
+    <string name="n_selection_hint">Enter n Value Here</string>
+    <string name="dart_selection_question">Num. of points to sample: </string>
+    <string name="dart_selection_hint">Enter Number Here</string>
+    <string name="find_volume_button_text">Find Volume</string>
+    <string name="answer_text">The volume of an unit %s-simplex is %s</string>
+
+    <string name="n_error">n can\'t be zero.</string>
+    <string name="empty_error">Value can\'t be null.</string>
+</resources>

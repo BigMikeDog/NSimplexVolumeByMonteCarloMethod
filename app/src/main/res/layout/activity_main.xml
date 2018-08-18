@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/screen_margin"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/dimension_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dimension_question"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/n_value_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/small_margin"
+        android:layout_marginStart="@dimen/small_margin"
+        android:text="@string/n_selection_question"
+        app:layout_constraintBaseline_toBaselineOf="@+id/edit_text_n_value"
+        app:layout_constraintEnd_toStartOf="@+id/edit_text_n_value"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_text_n_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_margin"
+        android:ems="10"
+        android:hint="@string/n_selection_hint"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/n_value_question"
+        app:layout_constraintTop_toBottomOf="@+id/dimension_question" />
+
+
+    <EditText
+        android:id="@+id/edit_text_dart_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_margin"
+        android:ems="10"
+        android:hint="@string/dart_selection_hint"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_n_value" />
+
+    <Button
+        android:id="@+id/button_find_volume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_margin"
+        android:text="@string/find_volume_button_text"
+        android:onClick="findVolume"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_dart_value" />
+
+    <TextView
+        android:id="@+id/answer_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_find_volume" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/small_margin"
+        android:layout_marginStart="@dimen/small_margin"
+        android:text="@string/dart_selection_question"
+        app:layout_constraintBaseline_toBaselineOf="@+id/edit_text_dart_value"
+        app:layout_constraintEnd_toStartOf="@+id/edit_text_dart_value"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
